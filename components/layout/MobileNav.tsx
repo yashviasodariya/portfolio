@@ -100,8 +100,7 @@ const MobileNav = () => {
               <nav className="flex h-full flex-col justify-center px-8">
                 <div className="space-y-2">
                   {headerNavLinks.map((link) => {
-                    const isActive =
-                      pathname === link.href || pathname.startsWith(link.href + '/')
+                    const isActive = pathname === link.href || pathname.startsWith(link.href + '/')
                     return (
                       <Link
                         key={link.title}

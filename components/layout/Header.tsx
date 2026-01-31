@@ -53,7 +53,7 @@ const Header = () => {
         {/* Utility buttons */}
         <CommandPalette />
         <ThemeSwitch />
-        
+
         {/* Mobile menu button - only on mobile */}
         <MobileNav />
       </div>

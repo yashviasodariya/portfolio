@@ -235,11 +235,9 @@ export default function Home({ posts }) {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 1.1 }}
-        className="my-16 rounded-xl bg-gradient-to-br from-primary-50 to-primary-100 p-8 text-center dark:from-primary-900/20 dark:to-primary-800/20"
+        className="from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-800/20 my-16 rounded-xl bg-gradient-to-br p-8 text-center"
       >
-        <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-gray-100">
-          Let's Connect
-        </h2>
+        <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-gray-100">Let's Connect</h2>
         <p className="mb-6 text-lg text-gray-600 dark:text-gray-400">
           Interested in pharmaceutical research, hospital pharmacy, or collaboration opportunities?
         </p>

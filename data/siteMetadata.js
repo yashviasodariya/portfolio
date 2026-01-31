@@ -3,7 +3,8 @@ const siteMetadata = {
   title: 'Yashvi Asodariya - Pharmacist & Healthcare Professional',
   author: 'Yashvi Asodariya',
   headerTitle: 'Yashvi Asodariya',
-  description: 'B.Pharm Graduate | Hospital Pharmacy | Pharmaceutical Research | Formulation & Analysis',
+  description:
+    'B.Pharm Graduate | Hospital Pharmacy | Pharmaceutical Research | Formulation & Analysis',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://yashviasodariya.vercel.app',

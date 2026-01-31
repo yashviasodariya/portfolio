@@ -124,7 +124,8 @@ const experienceData: Experience[] = [
     location: 'Surat, Gujarat, India',
     startDate: '2018-06',
     endDate: '2020-03',
-    description: 'Focused on Science stream with Chemistry, Biology, and Physics for pharmacy preparation.',
+    description:
+      'Focused on Science stream with Chemistry, Biology, and Physics for pharmacy preparation.',
     achievements: [
       'Completed HSC with Science stream (Chemistry, Biology, Physics)',
       'Built strong foundation for pharmaceutical sciences',

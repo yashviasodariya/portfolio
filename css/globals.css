@@ -7,11 +7,11 @@ body:focus-visible {
 }
 
 /* Better focus management for dialogs */
-[role="dialog"]:focus {
+[role='dialog']:focus {
   outline: none;
 }
 
 /* Prevent white border flash on dialog open */
-body:has([role="dialog"]) {
+body:has([role='dialog']) {
   overflow: hidden;
 }

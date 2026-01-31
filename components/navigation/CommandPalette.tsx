@@ -124,7 +124,10 @@ export default function CommandPalette() {
       </motion.button>
 
       <Transition show={isOpen} as={Fragment} afterLeave={() => setQuery('')}>
-        <Dialog onClose={setIsOpen} className="fixed inset-0 z-[100] overflow-y-auto p-4 pt-[15vh] sm:pt-[20vh]">
+        <Dialog
+          onClose={setIsOpen}
+          className="fixed inset-0 z-[100] overflow-y-auto p-4 pt-[15vh] sm:pt-[20vh]"
+        >
           <TransitionChild
             enter="duration-300 ease-out"
             enterFrom="opacity-0"
@@ -153,7 +156,7 @@ export default function CommandPalette() {
                   }
                 }}
               >
-                <div className="focus-within:ring-primary-500 overflow-hidden rounded-xl bg-white ring-1 shadow-2xl ring-black/5 focus-within:ring-2 dark:bg-zinc-800">
+                <div className="focus-within:ring-primary-500 overflow-hidden rounded-xl bg-white shadow-2xl ring-1 ring-black/5 focus-within:ring-2 dark:bg-zinc-800">
                   <div className="flex items-center border-b border-gray-200 px-3 sm:px-4 dark:border-zinc-700">
                     <HiSearch className="h-4 w-4 flex-shrink-0 text-gray-400 sm:h-5 sm:w-5" />
                     <ComboboxInput
@@ -184,7 +187,10 @@ export default function CommandPalette() {
 
                   {/* Results */}
                   {!isLoading && filteredItems.length > 0 && (
-                    <ComboboxOptions static className="max-h-[50vh] overflow-y-auto py-2 sm:max-h-96">
+                    <ComboboxOptions
+                      static
+                      className="max-h-[50vh] overflow-y-auto py-2 sm:max-h-96"
+                    >
                       {filteredItems.map((item, index) => (
                         <ComboboxOption key={`${item.href}-${index}`} value={item} as={Fragment}>
                           {({ focus }) => (
@@ -199,7 +205,9 @@ export default function CommandPalette() {
                                 <div className="flex flex-col overflow-hidden">
                                   <span className="truncate font-medium">{item.name}</span>
                                   {item.category && (
-                                    <span className="truncate text-xs opacity-75">{item.category}</span>
+                                    <span className="truncate text-xs opacity-75">
+                                      {item.category}
+                                    </span>
                                   )}
                                 </div>
                               </div>
