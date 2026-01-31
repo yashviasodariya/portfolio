@@ -1,0 +1,17 @@
+/* Prevent focus outline flash on body/html when opening dialogs */
+html:focus,
+body:focus,
+html:focus-visible,
+body:focus-visible {
+  outline: none !important;
+}
+
+/* Better focus management for dialogs */
+[role="dialog"]:focus {
+  outline: none;
+}
+
+/* Prevent white border flash on dialog open */
+body:has([role="dialog"]) {
+  overflow: hidden;
+}
